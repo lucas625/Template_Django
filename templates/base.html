@@ -1,0 +1,25 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>{% block title %}{% endblock %}</title>
+        {% comment %} <link rel="shortcut icon" type="image/png" href="{% static 'images/icons/favicon.png' %}"/> {% endcomment %}
+        {% render_bundle 'main' config='CSS' %}
+    </head>
+    <body>
+
+        {% block body %}
+        {% endblock %}
+
+        {% render_bundle 'main' config='JS' %}
+
+        {% block js %}
+        {% endblock %}
+
+    </body>
+</html>
