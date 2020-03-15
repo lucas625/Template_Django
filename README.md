@@ -1,4 +1,4 @@
-# Template-Django
+# Template_Django
 
 [![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![Coverage Status](https://coveralls.io/repos/github/lucas625/Template_Django/badge.svg?branch=master)](https://coveralls.io/github/lucas625/Template_Django?branch=master)
 
@@ -37,7 +37,7 @@ Siga os seguintes passos para fazer a instalação das dependências do projeto
 2. Projeto
 
    - Baixe o projeto
-     - ```$ git clone https://github.com/lucas625/Template-Django.git```
+     - ```$ git clone https://github.com/lucas625/Template_Django.git```
 
 3. Instale [Pyenv](https://github.com/pyenv/pyenv)
 
