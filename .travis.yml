@@ -4,6 +4,10 @@ python:
 install:
   - pip install pipenv
   - pipenv install --dev
+before_script:
+  - export SECRET_KEY='TEST'
+  - export ALLOWED_HOSTS='[*]'
+  - export DEBUG='True'
 script:
   - pipenv run coverage run manage.py test --no-input --debug-mode -v 2
   - pipenv run coverage html -d public/coverage
