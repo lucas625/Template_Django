@@ -9,6 +9,7 @@ ipython = "*"
 ipdb = "*"
 pylint-django = "*"
 pre-commit = "*"
+python-coveralls = "*"
 
 [packages]
 django = "==3.0.3"
