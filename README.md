@@ -120,6 +120,9 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
         ```coverage run manage.py test --no-input --debug-mode -v 2```
 
 4. Rodar o projeto
+   - Rodar apenas servidor
+     - ```$ python manage.py runserver```
+
    - Rodar o servidor em conjunto com o webpack
      - ```$ npm run start```
 
