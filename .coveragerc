@@ -1,0 +1,8 @@
+[run]
+include=
+    core/*
+    Template_Django/*
+
+omit =
+    manage.py
+    tests/*

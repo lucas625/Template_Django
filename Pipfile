@@ -1,0 +1,22 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+coverage = "*"
+ipython = "*"
+ipdb = "*"
+pylint-django = "*"
+pre-commit = "*"
+
+[packages]
+django = "==3.0.3"
+python-decouple = "==3.3"
+djangorestframework = "==3.11.0"
+Pillow = "*"
+django-webpack-loader = "*"
+django-widget-tweaks = "*"
+
+[requires]
+python_version = "3.7"

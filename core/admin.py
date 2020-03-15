@@ -1,3 +1,6 @@
-# from django.contrib import admin
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-# Register your models here.
+"""Core app admin module"""
+
+# from django.contrib import admin

@@ -1,16 +1,20 @@
-#!/usr/bin/env python
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
+
 """Django's command-line utility for administrative tasks."""
+
 import os
 import sys
 
 
 def main():
+    """Django main function"""
     os.environ.setdefault(
         'DJANGO_SETTINGS_MODULE',
-        'Template_Django.settings.development'
+        'Template_Django.settings'
     )
     try:
-        from django.core.management import execute_from_command_line
+        from django.core.management import execute_from_command_line  # pylint: disable=import-outside-toplevel
     except ImportError as exc:
         raise ImportError(
             "Couldn't import Django. Are you sure it's installed and "

@@ -1,19 +1,16 @@
-"""
-WSGI config for Template Django project.
+# !/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
-It exposes the WSGI callable as a module-level variable named ``application``.
-
-For more information on this file, see
-https://docs.djangoproject.com/en/3.0/howto/deployment/wsgi/
-"""
+"""Project wsgi module"""
 
 import os
 
 from django.core.wsgi import get_wsgi_application
 
+
 os.environ.setdefault(
     'DJANGO_SETTINGS_MODULE',
-    'Template_Django.settings.development'
+    'Template_Django.settings'
 )
 
 application = get_wsgi_application()

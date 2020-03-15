@@ -1,116 +1,64 @@
 # Template-Django
 
-Site para o escritório B&amp;C Advogados.
+[![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![Coverage Status](https://coveralls.io/repos/github/lucas625/Template_Django/badge.svg?branch=master)](https://coveralls.io/github/lucas625/Template_Django?branch=master)
+
+Template de projeto Django.
 
 - [Template-Django](#template-django)
+  - [Equipe](#equipe)
   - [Requerimentos](#requerimentos)
+  - [Guias](#guias)
   - [Instalação](#instala%c3%a7%c3%a3o)
-    - [Windows](#windows)
-    - [Ubuntu](#ubuntu)
   - [Rodando o projeto](#rodando-o-projeto)
+  - [Tópicos Adicionais](#t%c3%b3picos-adicionais)
+
+## Equipe
+
+Desenvolvedor: [Lucas Aurelio](https://github.com/lucas625)
 
 ## Requerimentos
 
-- Windows 10 ou Ubuntu 18.04 ou superior
-- Python 3.7 ou superior
-- Virtualenv
-- Node.js
-- VS Code
+- [Pyenv](https://github.com/pyenv/pyenv#installation)
+- [Pipenv](https://github.com/pypa/pipenv)
+- [Node.js](https://nodejs.org/en/)
+
+## Guias
+
+- [The Twelve-Factor App](https://12factor.net/)
 
 ## Instalação
 
-### Windows
-
-Siga os seguintes passos para fazer a instalação das dependências do projeto no windows 10.
+Siga os seguintes passos para fazer a instalação das dependências do projeto
 
 1. Git
-   - Instale o Git
-     - Vá para o [site do git](https://git-scm.com/download/win) e faça download.
+
+   - Instale o [Git](https://git-scm.com/)
+
 2. Projeto
+
    - Baixe o projeto
      - ```$ git clone https://github.com/lucas625/Template-Django.git```
-   - Vá para a pasta do projeto
-     - ```$ cd Template-Django```
-3. Python
-   - Instale o Python e o Pip
-     - Vá para o [site do python](https://www.python.org/downloads/windows/) e faça download.
-   - Verifique a versão do Python
-     - ```$ python -V```
-4. Pip
-   - Atualize o Pip
-     - ```$ python -m pip install --upgrade pip```
-   - Verifique a versão do Pip
-     - ```$ pip -V```
-5. Virtualenv
-   - Instale a Virtualenv
-     - ```$ pip install virtualenv```
-   - Crie a Virtualenv
-     - ```$ python -m venv venv```
-   - Inicie a Virtualenv
-     - ```$ venv\Scripts\activate```
-   - Verifique se a versão do Python é a desejada
-     - ```$ python -V```
-   - Atualize o Pip
-     - ```$ python -m pip install --upgrade pip```
-   - Instale as dependências do python
-     - ```$ pip install -r requirements.txt```
+
+3. Instale [Pyenv](https://github.com/pyenv/pyenv)
+
+   - **Caso esteja usando o windows, pode ser mais fácil apenas baixar o python 3.7**
+
+4. Instale [Pipenv](https://github.com/pyenv/pyenv)
+
+5. Prepare o ambiente
+
+    1. Vá para a pasta do projeto
+    2. ```$ pipenv --python 3.7```
+    3. ```$ pipenv shell```
+    4. ```$ pipenv install --dev```
+
 6. Node.js
-   - Instale o Node.js e o npm
-     - Vá para o [site do Node](https://nodejs.org/en/download/) e faça download.
-   - Verifique a versão do node
-     - ```$ node --version```
-   - Verifique a versão do npm
-     - ```$ npm --version```
-   - **OBS**: Em caso de algum erro verifique se o node e o npm estão na configurados nas variáveis de ambiente do windows.
-   - Instale as dependências do node
-     - ```$ npm install```
 
-### Ubuntu
-
-Siga os seguintes passos para fazer a instalação das dependências do projeto no ubuntu.
-
-1. Geral
-   - Atualize as informações de dependências do computador
-     - ```$ sudo apt-get update```
-2. Git
-   - Instale o Git
-     - ```$ sudo apt install git```
-3. Projeto
-   - Baixe o projeto
-     - ```$ git clone https://github.com/lucas625/Template-Django.git```
-   - Vá para a pasta do projeto
-     - ```$ cd Template Django```
-4. Python
-   - Instale o Python
-     - ```$ sudo apt-get install python3.7```
-   - Verifique a versão do Python
-     - ```$ python3 -V```
-5. Pip
-   - Instale o Pip
-     - ```$ sudo apt install python3-pip```
-   - Atualize o Pip
-     - ```$ sudo -H pip3 install --upgrade pip```
-   - Verifique a versão do Pip
-     - ```$ pip3 -V```
-6. Virtualenv
-   - Instale a Virtualenv
-     - ```$ sudo apt install python3-venv```
-     - Caso o apt não funcione, use:
-       - ```$ pip3 install virtualenv```
-   - Crie a Virtualenv
-     - ```$ python3 -m venv venv```
-   - Inicie a Virtualenv
-     - ```$ source venv/bin/activate```
-   - Verifique se a versão do Python é a desejada
-     - ```$ python -V```
-   - Atualize o Pip
-     - ```$ pip install --upgrade pip```
-   - Instale as dependências do python
-     - ```$ pip install -r requirements.txt```
-7. Node.js
    - Instale o Node.js
      - ```$ sudo apt-get install nodejs```
-8. Npm
+
+7. Npm
+
    - Instale o npm
      - ```$ sudo apt-get install npm```
    - Atualize o npm
@@ -123,13 +71,13 @@ Siga os seguintes passos para fazer a instalação das dependências do projeto 
         sudo n stable
         ```
 
-   - Feche a abra o terminal na pasta do projeto para garantir que o node foi atualizado, lembrando de iniciar a **virtualenv**.
    - Instale as dependências do node
      - ```$ npm install```
 
-9. Pre-commit
-   - Instale os hooks do pre-commit
-     - ```$ pre-commit install```
+8. Pre-commit
+
+    - Instale os hooks do pre-commit
+      - ```$ pre-commit install```
 
 ## Rodando o projeto
 
@@ -137,13 +85,22 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
 
 1. Segurança do projeto
 
-   - Crie um arquivo **.env** e adicione as seguintes chaves:
+   - Adicione as variáveis de ambiente
+        - Ubuntu
 
-    ```.env
-    SECRET_KEY = qualquer_coisa
-    ```
+            ```sh
+            export SECRET_KEY=$(python resources/scripts/get_secret_key.py)
+            export ALLOWED_HOSTS=$(python resources/scripts/get_allowed_hosts.py)
+            export DEBUG='True'
+            ```
 
-    - **OBS**: Este arquivo não pode ser adicionado ao github por questões de segurança.
+        - Windows
+
+            ```sh
+            set SECRET_KEY='Qualquer coisa'
+            set ALLOWED_HOSTS='[*]'
+            set DEBUG='True'
+            ```
 
 2. Migrações
 
@@ -154,6 +111,21 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
     python manage.py migrate
     ```
 
-3. Rodar o projeto
+3. Testando
+
+    - Testar sem cobertura
+        ```python manage.py test --no-input --debug-mode```
+
+    - Testar com cobertura
+        ```coverage run manage.py test --no-input --debug-mode -v 2```
+
+4. Rodar o projeto
    - Rodar o servidor em conjunto com o webpack
      - ```$ npm run start```
+
+## Tópicos Adicionais
+
+- Linter
+  - O linter utilizado é o pylint com a extensão do django.
+    ```pylint --load-plugins pylint_django pasta```
+    - É necessário rodar o pylint para todos os arquivos e fazer as correções necessárias sempre antes de realizar um commit.
