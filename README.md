@@ -114,9 +114,11 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
 3. Testando
 
     - Testar sem cobertura
+
         ```python manage.py test --no-input --debug-mode```
 
     - Testar com cobertura
+
         ```coverage run manage.py test --no-input --debug-mode -v 2```
 
 4. Rodar o projeto
@@ -130,5 +132,7 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
 
 - Linter
   - O linter utilizado é o pylint com a extensão do django.
+
     ```pylint --load-plugins pylint_django pasta```
+
     - É necessário rodar o pylint para todos os arquivos e fazer as correções necessárias sempre antes de realizar um commit.
