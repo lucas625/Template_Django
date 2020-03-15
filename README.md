@@ -1,6 +1,6 @@
 # Template-Django
 
-[![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![![Coverage Status](https://coveralls.io/repos/github/lucas625/Template_Django/badge.svg?branch=master)](https://coveralls.io/github/lucas625/Template_Django?branch=master)
+[![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![Coverage Status](https://coveralls.io/repos/github/lucas625/Template_Django/badge.svg?branch=master)](https://coveralls.io/github/lucas625/Template_Django?branch=master)
 
 Template de projeto Django.
 
