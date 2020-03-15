@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'webpack_loader',
     'widget_tweaks',
     'rest_framework',
+    'coverage',
     'core',
 ]
 
