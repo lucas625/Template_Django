@@ -4,7 +4,7 @@
 
 Template de projeto Django.
 
-- [Template-Django](#template-django)
+- [Template_Django](#templatedjango)
   - [Equipe](#equipe)
   - [Requerimentos](#requerimentos)
   - [Guias](#guias)
@@ -120,6 +120,10 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
     - Testar com cobertura
 
         ```coverage run manage.py test --no-input --debug-mode -v 2```
+
+    - Para ver o report
+
+        ```coverage report```
 
 4. Rodar o projeto
    - Rodar apenas servidor

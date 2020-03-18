@@ -7,10 +7,10 @@ install:
 before_script:
   - export SECRET_KEY='TEST'
   - export ALLOWED_HOSTS='[*]'
-  - export DEBUG='True'
+  - export DEBUG='False'
 script:
   - pipenv run coverage run manage.py test --no-input --debug-mode -v 2
   - pipenv run coverage html -d public/coverage
-  - pipenv run coverage report -m
+  - pipenv run coverage xml
 after_success:
-  - coveralls
+  - bash <(wget -q -O - https://coverage.codacy.com/get.sh)
