@@ -1,6 +1,6 @@
 # Template_Django
 
-[![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/43e28987829f4de1a99b94d6798640d9)](https://www.codacy.com/manual/lucas625/Template_Django?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucas625/Template_Django&amp;utm_campaign=Badge_Grade)
+[![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/43e28987829f4de1a99b94d6798640d9)](https://www.codacy.com/manual/lucas625/Template_Django?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucas625/Template_Django&amp;utm_campaign=Badge_Grade)[![codecov](https://codecov.io/gh/lucas625/Template_Django/branch/master/graph/badge.svg)](https://codecov.io/gh/lucas625/Template_Django)
 
 Template de projeto Django.
 

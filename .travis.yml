@@ -13,4 +13,4 @@ script:
   - pipenv run coverage html -d public/coverage
   - pipenv run coverage html
 after_success:
-  - bash <(wget -q -O - https://coverage.codacy.com/get.sh)
+  - bash <(curl -s https://codecov.io/bash)
