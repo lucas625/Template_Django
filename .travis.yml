@@ -11,6 +11,6 @@ before_script:
 script:
   - pipenv run coverage run manage.py test --no-input --debug-mode -v 2
   - pipenv run coverage html -d public/coverage
-  - pipenv run coverage xml
+  - pipenv run coverage html
 after_success:
   - bash <(wget -q -O - https://coverage.codacy.com/get.sh)
