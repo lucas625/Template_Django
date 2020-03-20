@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Script to generate SECRET_KEY
+Script to generate SECRET_KEY.
 """
 
 from django.core.management import utils

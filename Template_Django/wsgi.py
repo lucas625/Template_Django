@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Project wsgi module"""
+"""Project wsgi module."""
 
 import os
 

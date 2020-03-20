@@ -11,7 +11,7 @@ from core.serializers.template_model_serializer import TemplateModelSerializer
 
 class TemplateModelViewSet(viewsets.ModelViewSet):  # pylint: disable=too-many-ancestors
     """
-    It provides end-points for CRUD the template model
+    It provides end-points for CRUD the template model.
     """
     queryset = TemplateModel.objects.all()
     serializer_class = TemplateModelSerializer

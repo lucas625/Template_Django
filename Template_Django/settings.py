@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Project settings module"""
+"""Project settings module."""
 
 import os
 from decouple import config

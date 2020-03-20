@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Core app template model module"""
+"""Core app template model module."""
 
 from django.db import models
 
@@ -10,9 +10,10 @@ from core.models.abstract_model import AbstractBasicModel
 
 models.CharField.register_lookup(models.functions.Length)
 
+
 class TemplateModel(AbstractBasicModel):
     """
-    Template Model
+    Template Model.
     """
     full_name = models.CharField(max_length=150, null=True, verbose_name='Name')
 
@@ -23,6 +24,7 @@ class TemplateModel(AbstractBasicModel):
         return self.full_name
 
     class Meta:
+        """Template Model meta class."""
         abstract = False
         constraints = [
             models.CheckConstraint(

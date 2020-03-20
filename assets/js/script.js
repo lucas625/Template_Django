@@ -1,1 +1,1 @@
-import 'core/home'
+import "core/home";

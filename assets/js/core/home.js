@@ -8,5 +8,5 @@ $(function() {
     Returns:
         none
     */
-   console.log('Hello world!')
+   alert("Hello world!");
 });
