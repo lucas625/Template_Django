@@ -11,7 +11,7 @@ PRODUCTION_HELP_MSG = 'Enables/disables host production environment'
 
 
 def main():
-    """Generates the allowed hosts variable value"""
+    """Generates the allowed hosts variable value."""
     parse = argparse.ArgumentParser(description=DESCRIPTION)
     parse.add_argument(
         '--production',

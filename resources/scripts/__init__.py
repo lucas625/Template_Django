@@ -1,4 +1,4 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Resources scripts init module"""
+"""Resources scripts init module."""

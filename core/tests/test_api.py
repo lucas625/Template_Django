@@ -1,13 +1,13 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Module for testing core app rest API"""
+"""Module for testing core app rest API."""
 
 from django.test import TestCase
 
 
 class APIRestGetTestCase(TestCase):
-    """Test cases for rest API get"""
+    """Test cases for rest API get."""
 
     @classmethod
     def setUpTestData(cls):

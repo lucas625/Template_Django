@@ -8,7 +8,7 @@ import sys
 
 
 def main():
-    """Django main function"""
+    """Django main function."""
     os.environ.setdefault(
         'DJANGO_SETTINGS_MODULE',
         'Template_Django.settings'

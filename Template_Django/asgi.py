@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Project asgi module"""
+"""Project asgi module."""
 
 import os
 

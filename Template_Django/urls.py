@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Project urls module"""
+"""Project urls module."""
 
 from django.contrib import admin
 from django.urls import path
