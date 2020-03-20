@@ -2,68 +2,78 @@
 
 [![Build Status](https://travis-ci.org/lucas625/Template_Django.svg?branch=master)](https://travis-ci.org/lucas625/Template_Django) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/43e28987829f4de1a99b94d6798640d9)](https://www.codacy.com/manual/lucas625/Template_Django?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=lucas625/Template_Django&amp;utm_campaign=Badge_Grade)[![codecov](https://codecov.io/gh/lucas625/Template_Django/branch/master/graph/badge.svg)](https://codecov.io/gh/lucas625/Template_Django)
 
-Template de projeto Django.
+Django template project.
 
 - [Template_Django](#templatedjango)
-  - [Equipe](#equipe)
-  - [Requerimentos](#requerimentos)
-  - [Guias](#guias)
-  - [Instalação](#instala%c3%a7%c3%a3o)
-  - [Rodando o projeto](#rodando-o-projeto)
-  - [Tópicos Adicionais](#t%c3%b3picos-adicionais)
+  - [Team](#team)
+  - [Requirements](#requirements)
+  - [Guidelines](#guidelines)
+  - [Installation](#installation)
+  - [Run the project](#run-the-project)
+  - [Testing](#testing)
+  - [Additional Topics](#additional-topics)
 
-## Equipe
+## Team
 
-Desenvolvedor: [Lucas Aurelio](https://github.com/lucas625)
+Developer: [Lucas Aurelio](https://github.com/lucas625)
 
-## Requerimentos
+## Requirements
 
 - [Pyenv](https://github.com/pyenv/pyenv#installation)
 - [Pipenv](https://github.com/pypa/pipenv)
 - [Node.js](https://nodejs.org/en/)
 
-## Guias
+## Guidelines
 
 - [The Twelve-Factor App](https://12factor.net/)
 
-## Instalação
+## Installation
 
-Siga os seguintes passos para fazer a instalação das dependências do projeto
+Follow the next steps to install the dependencies.
 
 1. Git
 
-   - Instale o [Git](https://git-scm.com/)
+   - Install [Git](https://git-scm.com/)
 
-2. Projeto
+2. Project
 
-   - Baixe o projeto
-     - ```$ git clone https://github.com/lucas625/Template_Django.git```
+   - Clone the project
 
-3. Instale [Pyenv](https://github.com/pyenv/pyenv)
+        ```$ git clone https://github.com/lucas625/Template_Django.git```
 
-   - **Caso esteja usando o windows, pode ser mais fácil apenas baixar o python 3.7**
+3. Install [Pyenv](https://github.com/pyenv/pyenv)
 
-4. Instale [Pipenv](https://github.com/pyenv/pyenv)
+   - **If you are using windows, it may be easier to just install python 3.7**
+
+4. Install [Pipenv](https://github.com/pyenv/pyenv)
 
 5. Prepare o ambiente
 
-    1. Vá para a pasta do projeto
-    2. ```$ pipenv --python 3.7```
-    3. ```$ pipenv shell```
-    4. ```$ pipenv install --dev```
+    - Setup the environment
+
+        ```sh
+        pipenv --python 3.7
+        pipenv shell
+        pipenv install --dev
+        ```
 
 6. Node.js
 
-   - Instale o Node.js
-     - ```$ sudo apt-get install nodejs```
+   - Install [Node.js](https://nodejs.org/en/download/)
+
+        ```$ sudo apt-get install nodejs```
 
 7. Npm
 
-   - Instale o npm
-     - ```$ sudo apt-get install npm```
-   - Atualize o npm
-     - ```$ sudo npm install -g npm@next```
-   - Use o npm para atualizar o node
+   - Install npm
+
+        ```$ sudo apt-get install npm```
+
+   - Update npm
+
+        ```$ sudo npm install -g npm@next```
+
+   - Use npm to update node
 
         ```sh
         sudo npm cache clean -f
@@ -71,21 +81,24 @@ Siga os seguintes passos para fazer a instalação das dependências do projeto
         sudo n stable
         ```
 
-   - Instale as dependências do node
-     - ```$ npm install```
+   - Install node dependecies
+
+        ```$ npm install```
 
 8. Pre-commit
 
-    - Instale os hooks do pre-commit
-      - ```$ pre-commit install```
+    - Install pre-commit hooks
 
-## Rodando o projeto
+        ```$ pre-commit install```
 
-Após ter todas as dependências instaladas você pode seguir os próximos passos.
+## Run the project
 
-1. Segurança do projeto
+After completing the installation of the project, follow the next steps to execute it.
 
-   - Adicione as variáveis de ambiente
+1. Security
+
+   - Add the environment variables to your current terminal
+
         - Ubuntu
 
             ```sh
@@ -97,46 +110,49 @@ Após ter todas as dependências instaladas você pode seguir os próximos passo
         - Windows
 
             ```sh
-            set SECRET_KEY='Qualquer coisa'
+            set SECRET_KEY='A CUSTOM SECRET KEY'
             set ALLOWED_HOSTS='[*]'
             set DEBUG='True'
             ```
 
-2. Migrações
+2. Migrations
 
-    - O Django necessita que você rode migrações:
+    - Execute Django migrations
 
-    ```sh
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
+        ```sh
+        python manage.py makemigrations
+        python manage.py migrate
+        ```
 
-3. Testando
+3. Running
+   - Run the server alone
 
-    - Testar sem cobertura
+        ```$ python manage.py runserver```
 
-        ```python manage.py test --no-input --debug-mode```
+   - Run the server alongside webpack
 
-    - Testar com cobertura
+        ```$ npm run start```
 
-        ```coverage run manage.py test --no-input --debug-mode -v 2```
+## Testing
 
-    - Para ver o report
+- Testing without coverage
 
-        ```coverage report```
+   ```python manage.py test --no-input --debug-mode```
 
-4. Rodar o projeto
-   - Rodar apenas servidor
-     - ```$ python manage.py runserver```
+- Testing with coverage
 
-   - Rodar o servidor em conjunto com o webpack
-     - ```$ npm run start```
+   ```coverage run manage.py test --no-input --debug-mode -v 2```
 
-## Tópicos Adicionais
+  - After testing with coverage you might want to see the report.
+
+    ```coverage report```
+
+## Additional Topics
 
 - Linter
-  - O linter utilizado é o pylint com a extensão do django.
+
+  - The linter for this project is pylint with django extension.
 
     ```pylint --load-plugins pylint_django pasta```
 
-    - É necessário rodar o pylint para todos os arquivos e fazer as correções necessárias sempre antes de realizar um commit.
+    - You must execute pylint for all packages and fix the issues before commiting.
