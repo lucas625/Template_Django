@@ -10,6 +10,7 @@ ipdb = "*"
 pylint-django = "*"
 pre-commit = "*"
 python-coveralls = "*"
+freezegun = "*"
 
 [packages]
 django = "==3.0.3"

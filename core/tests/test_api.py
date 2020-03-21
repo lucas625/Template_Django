@@ -14,7 +14,7 @@ class APIRestGetTestCase(TestCase):
         super(APIRestGetTestCase, cls)
         cls._url = '/api/'
 
-    def test_get_student_rest_api_page_status_ok(self):
+    def test_get_rest_api_page_status_ok(self):
         """Checks the status of a get request to the API page."""
         response = self.client.get(self._url)
         self.assertEqual(response.status_code, 200)
