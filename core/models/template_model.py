@@ -15,7 +15,7 @@ class TemplateModel(AbstractBasicModel):
     """
     Template Model.
     """
-    full_name = models.CharField(max_length=150, null=True, verbose_name='Name')
+    full_name = models.CharField(unique=True, max_length=150, null=True, verbose_name='Name')
 
     def __str__(self):
         """
@@ -25,7 +25,6 @@ class TemplateModel(AbstractBasicModel):
 
     class Meta:
         """Template Model meta class."""
-        abstract = False
         constraints = [
             models.CheckConstraint(
                 check=models.Q(full_name__length__lte=150),
