@@ -1,7 +1,7 @@
 # !/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-"""Module for testing template model."""
+"""Module for testing template model CRUD."""
 
 from sqlite3 import IntegrityError as Sqlite3IntegrityError
 import datetime
