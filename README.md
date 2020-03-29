@@ -153,6 +153,6 @@ After completing the installation of the project, follow the next steps to execu
 
   - The linter for this project is pylint with django extension.
 
-    ```pylint --load-plugins pylint_django pasta```
+    ```pylint --load-plugins pylint_django package```
 
     - You must execute pylint for all packages and fix the issues before commiting.
